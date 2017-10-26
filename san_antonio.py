@@ -15,24 +15,22 @@ characters = [
     "Kirikou"
 ]
 
+# get user response
 user_response = input("Press enter to know the next quote")
 
+# Get message 
+def message(character, quote):
+	n_character = character.capitalize()
+	n_quote = quote.capitalize()
+	return "{} a dit : {}".format(n_character, n_quote)
 
 # Show random quote
-if user_response == 'B':
-	# - leave the program
-	pass
-elif user_response == 'A':
-	print("bad response")
-else:
-	# Show random quote
-	pass
-
-# Show random quote
-def get_random_quote( my_list ):
+def get_random_item_according_to_the_list_pass_in_parameter( my_list ):
 	# get a random number
 	my_list = quotes[0]
 	print(my_list)
 	return "programm it's over"
 
-print(get_random_quote(quotes))
+while user_response != "B":
+	print(message(get_random_item_according_to_the_list_pass_in_parameter(characters), get_random_item_according_to_the_list_pass_in_parameter(quotes)))
+	user_response = input('Tapez entrée pour connaître une autre citation ou B pour quitter le programme.')
