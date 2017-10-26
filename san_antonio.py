@@ -28,9 +28,10 @@ def message(character, quote):
 def get_random_item_according_to_the_list_pass_in_parameter( my_list ):
 	# get a random number
 	my_list = quotes[0]
-	print(my_list)
-	return "programm it's over"
+	return my_list
 
 while user_response != "B":
 	print(message(get_random_item_according_to_the_list_pass_in_parameter(characters), get_random_item_according_to_the_list_pass_in_parameter(quotes)))
 	user_response = input('Tapez entrée pour connaître une autre citation ou B pour quitter le programme.')
+
+print("\nprogram it's over !\n")
