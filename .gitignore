@@ -1,0 +1,6 @@
+*.xml
+*.yml
+env
+venv
+.DS_Store
+.project
